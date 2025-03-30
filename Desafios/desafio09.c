@@ -15,7 +15,7 @@ int main()
         case 1: {printf("\nIngresando a la calculadora...\n");}
             printf("1. Suma\n");
             printf("2. Resta\n");
-            printf("0. Para finalizar\n");
+            printf("0. Volver al menu principal\n");
             printf("Ingrese una opcion:");
             scanf("%d",&subopcion);
             switch (subopcion)
@@ -32,8 +32,8 @@ int main()
                 printf("Resultado: %d\n",a-b);
                 break;
                 case 0:
-                printf("Finalizando...\n");
-                exit(0);
+                printf("Volviendo...\n");
+                break;
             default:
                 printf("Subopcion invalida, ingrese nuevamente:\n");
                 scanf("%d",&subopcion);
