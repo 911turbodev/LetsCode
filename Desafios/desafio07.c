@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <string.h>
-#define MAX 100// long maxima de frases
+#define MAX 100 // long maxima de frases
 int main()
 {
     char frase1[MAX], frase2[MAX], frase3[MAX];
-    int A,B,C;
+    int A, B, C;
     printf("Ingrese la primera frase:\n");
     fgets(frase1, MAX, stdin);
     printf("Ingrese la segunda frase:\n");
-    fgets(frase2, MAX, stdin);  
+    fgets(frase2, MAX, stdin);
     printf("Ingrese la tercera frase:\n");
     fgets(frase3, MAX, stdin);
-        frase1[strcspn(frase1, "\n")] = '\0'; // Elimina el salto de línea
-        frase2[strcspn(frase2, "\n")] = '\0'; // Elimina el salto de línea
-        frase3[strcspn(frase3, "\n")] = '\0'; // Elimina el salto de línea
+    frase1[strcspn(frase1, "\n")] = '\0'; // Elimina el salto de línea
+    frase2[strcspn(frase2, "\n")] = '\0'; // Elimina el salto de línea
+    frase3[strcspn(frase3, "\n")] = '\0'; // Elimina el salto de línea
     A = strlen(frase1);
     B = strlen(frase2);
     C = strlen(frase3);
