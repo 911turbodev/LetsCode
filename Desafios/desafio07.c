@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #define MAX 100 // long maxima de frases
+
 int main()
 {
     char frase1[MAX], frase2[MAX], frase3[MAX];
@@ -20,40 +21,42 @@ int main()
     printf("\nLa longitud de la primera frase es: %d\n\n", A);
     printf("La longitud de la segunda frase es: %d\n\n", B);
     printf("La longitud de la tercera frase es: %d\n\n", C);
-    if (A > B)
+
+    // Ordenar frases por longitud descendente
+    if (A >= B && A >= C)
     {
-        if (B > C)
+        printf("%s\n", frase1);
+        if (B >= C)
         {
-            printf("%s\n%s\n%s\n", frase1, frase2, frase3);
+            printf("%s\n%s\n", frase2, frase3);
         }
         else
         {
-            if (A > C)
-            {
-                printf("%s\n%s\n%s\n", frase1, frase3, frase2);
-            }
-            else
-            {
-                printf("%s\n%s\n%s\n", frase3, frase1, frase2);
-            }
+            printf("%s\n%s\n", frase3, frase2);
+        }
+    }
+    else if (B >= A && B >= C)
+    {
+        printf("%s\n", frase2);
+        if (A >= C)
+        {
+            printf("%s\n%s\n", frase1, frase3);
+        }
+        else
+        {
+            printf("%s\n%s\n", frase3, frase1);
         }
     }
     else
     {
-        if (C > B)
+        printf("%s\n", frase3);
+        if (A >= B)
         {
-            printf("%s\n%s\n%s\n", frase3, frase2, frase1);
+            printf("%s\n%s\n", frase1, frase2);
         }
         else
         {
-            if (A > C)
-            {
-                printf("%s\n%s\n%s\n", frase2, frase1, frase3);
-            }
-            else
-            {
-                printf("%s\n%s\n%s\n", frase2, frase3, frase1);
-            }
+            printf("%s\n%s\n", frase2, frase1);
         }
     }
     return 0;
