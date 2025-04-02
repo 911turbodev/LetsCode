@@ -1,40 +1,34 @@
 #include <stdio.h>
 int main()
 {
-    // crear un menu  para ingresar un usuario y una contraseña
-    int opcion;
-    char usuario[20], contrasena[20];
-    char admin[10] = "admin";
-    char pass[10] = "admin";
+    // menu de inicio
+    char user[10], pass[10];
+    printf("Menu de inicio de sesion\n");
     do
     {
-        printf("1. Ingresar usuario y contrasena\n");
-        printf("2. Salir\n");
-        printf("Ingrese una opcion: ");
-        scanf("%d", &opcion);
-        switch (opcion)
+        printf("Ingrese su usuario:\n");
+        scanf("%s", user);
+        printf("Ingrese su password:\n");
+        scanf("%s", pass);
+        if (strcmp(user, "admin") == 0 && strcmp(pass, "admin") == 0)
         {
-        case 1:
-            printf("Ingrese usuario: ");
-            scanf("%s", usuario);
-            printf("Ingrese contrasena: ");
-            scanf("%s", contrasena);
-            if (strcmp(usuario, admin) == 0 && strcmp(contrasena, pass) == 0)
+            int opcion;
+            printf("Ingresando sesion...\n");
+            printf("Bienvenido %s\n", user);
+            do
             {
-                printf("Bienvenido %s\n", usuario);
-            }
-            else
-            {
-                printf("Usuario o contrasena incorrectos\n");
-            }
-            break;
-        case 2:
-            printf("Saliendo...\n");
-            break;
-        default:
-            printf("Opcion invalida\n");
-            break;
+                printf("Menu interactivo\n");
+                printf("1. Calculadora\n");
+                printf("2. Tabla de multiplicar\n");
+                printf("3. Salir y cerrar sesion\n");
+                printf("Ingrese una opcion:\n");
+                scanf("%d" & opcion);
+            } while (1);
         }
-    } while (opcion != 2);
+        else
+        {
+            printf("Los datos ingresados son incorrectos. Intentelo nuevamente\n");
+        }
+    } while (1);
     return 0;
 }
