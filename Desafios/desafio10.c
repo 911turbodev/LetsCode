@@ -18,7 +18,7 @@ int main()
             do
             {
                 printf("1. Suma\n");
-                printf("2. Restan\n");
+                printf("2. Resta\n");
                 printf("3. Division\n");
                 printf("0. volver al menu\n");
                 scanf("%d", &subopcion);
@@ -45,7 +45,14 @@ int main()
                     printf("Division\n");
                     printf("Ingrese dos numeros para dividir\n");
                     scanf("%d %d", &a, &b);
-                    printf("Resultado de %d / %d: %d\n", a, b, a / b);
+                    if (b != 0)
+                    {
+                        printf("Resultado de %d / %d: %d\n", a, b, a / b);
+                    }
+                    else
+                    {
+                        printf("Error: Division por cero no permitida.\n");
+                    }
                     break;
                 }
                 case 0:
