@@ -40,7 +40,7 @@ int main()
         printf("Numero secreto generado.\n");
         Sleep(1300);
         system("cls");
-        printf("Elije un numero entre [1-100] %d\n", numeroSecreto);
+        printf("Elije un numero entre [1-100]\n");
         printf("Tienes 7 intentos.\n");
         while (intentos < 7)
         {
