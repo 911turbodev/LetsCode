@@ -8,8 +8,6 @@ int main()
     int a, b, c;
     printf("Ingrese 3 numeros:\n");
     scanf("%d %d %d", &a, &b, &c);
-
-    // Determinar el mayor número
     if (a >= b && a >= c)
     {
         if (a == b && a == c)
@@ -44,6 +42,5 @@ int main()
     {
         printf("[%d] es el mayor\n", c);
     }
-
     return 0;
 }
