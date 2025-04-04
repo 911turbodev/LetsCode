@@ -15,7 +15,7 @@ int main()
         Sleep(1300);
         printf("Loading...\n");
         Sleep(1300);
-        printf("Seed generated sucesfully! Seed: %d\n", seed);
+        printf("Seed generated sucesfully!\n");
         printf("\nChoose a number between [1 and 100]\n");
         printf("You have 7 tries to guess it\n");
         while (attempts < 7)
@@ -42,7 +42,7 @@ int main()
         {
             printf("\nYou've used all your attempts. The number was %d.", seed);
         }
-        // ask to play again
+        // preguntar si quiere jugar de nuevo
         printf("\nDo you want to play again? [y/n]: ");
         scanf(" %c", &choice);
         if (choice != 'y' && choice != 'Y')
@@ -51,7 +51,7 @@ int main()
         }
     }
     printf("\nThanks for playing!\n");
-    printf("Your score:\n");
+    printf("SCORE:\n");
     printf("You won %d time(s).\n", wins);
 
     return 0;
