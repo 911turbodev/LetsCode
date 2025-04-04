@@ -3,7 +3,7 @@ int main()
 {
     // Ejercicio[6]
     // Solicita un número al usuario y determina si es positivo, negativo o cero.
-    // Si es positivo, verifica si es par o impar.
+    // Si es positivo, verifica si es par o impar
     int num;
     printf("Ingrese un numero: ");
     scanf("%d", &num);
