@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    // ejercicio [7]
+    // Ejercicio [7]
     // El programa debe pedir,  hasta que el usuario indique que ya no debe ingresar más notas
     // una nota (0-100) e indicar la calificación:
     // 90 - 100 : Sobresaliente 80 - 89 : Muy Bueno 70 - 79 : Bueno 60 - 69 : Aprobado
