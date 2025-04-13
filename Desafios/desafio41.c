@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int i, j, num, esPrimo, contadoPrimos = 0;
+    int num, i, j, esPrimo, contadorPrimos = 0;
     for (i = 1; i <= 10; i++)
     {
-        printf("POS [%d] INGRESE UN NUMERO: ", i);
+        printf("POS [%d] Ingrese un numero: ", i);
         scanf("%d", &num);
         if (num <= 1)
         {
@@ -24,9 +24,9 @@ int main()
         }
         if (esPrimo == 1)
         {
-            contadoPrimos++;
+            contadorPrimos++;
         }
     }
-    printf("Cantidad de numeros primos: %d", contadoPrimos);
+    printf("Contador de numeros primos ingresados: %d", contadorPrimos);
     return 0;
 }
