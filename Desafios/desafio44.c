@@ -245,4 +245,4 @@ int main()
     endwin();
     return 0;
 }
-// tetris
+// tetriss
